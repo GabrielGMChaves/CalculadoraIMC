@@ -19,9 +19,21 @@ public class Program
 			Console.WriteLine("Seu IMC é " + IMC + ", peso normal.");
 		}
 
-		if (IMC > 24.9)
+		if (IMC > 24.9 && IMC <= 29.9)
 		{
-			Console.WriteLine("Seu IMC é " + IMC + ", OBESO.");
+			Console.WriteLine("Seu IMC é " + IMC + ", sobrepeso.");
+		}
+		if (IMC > 29.9 && IMC <= 34.9)
+		{
+			Console.WriteLine("Seu IMC é " + IMC + ", obesidade nível 1.");
+		}
+		if (IMC > 34.9 && IMC <= 39.9)
+		{
+			Console.WriteLine("Seu IMC é " + IMC + ", obesidade nível 2.");
+		}
+		if (IMC > 39.9)
+		{
+			Console.WriteLine("Seu IMC é " + IMC + ", obesidade mórbida.");
 		}
 	}
 }
