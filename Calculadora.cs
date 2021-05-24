@@ -4,34 +4,38 @@ public class Program
 {
 	public static void Main()
 	{
-		Console.WriteLine("Meu amor, POR FAVOR, escreva seu peso.");
+		Console.WriteLine("Querido(a), POR FAVOR, escreva seu peso.");
 		double peso = double.Parse(Console.ReadLine());
-		Console.WriteLine("Meu amor, POR FAVOR, escreva sua altura.");
+		Console.WriteLine("Querido(a), POR FAVOR, escreva sua altura.");
 		double altura = double.Parse(Console.ReadLine());
 		double IMC = peso / (altura * altura);
-		if (IMC <= 18.5)
+		if (IMC <= 16.99)
 		{
-			Console.WriteLine("Seu IMC é " + IMC + ", magrela demais.");
+			Console.WriteLine("Seu IMC é " + IMC + ", muito abaixo do peso.");
+		}
+		if (IMC > 16.99 && IMC <= 18.5)
+		{
+			Console.WriteLine("Seu IMC é " + IMC + ", abaixo do peso.");
 		}
 
-		if (IMC > 18.5 && IMC <= 24.9)
+		if (IMC > 18.5 && IMC <= 24.99)
 		{
 			Console.WriteLine("Seu IMC é " + IMC + ", peso normal.");
 		}
 
-		if (IMC > 24.9 && IMC <= 29.9)
+		if (IMC > 24.99 && IMC <= 29.99)
 		{
 			Console.WriteLine("Seu IMC é " + IMC + ", sobrepeso.");
 		}
-		if (IMC > 29.9 && IMC <= 34.9)
+		if (IMC > 29.99 && IMC <= 34.99)
 		{
 			Console.WriteLine("Seu IMC é " + IMC + ", obesidade nível 1.");
 		}
-		if (IMC > 34.9 && IMC <= 39.9)
+		if (IMC > 34.99 && IMC <= 39.99)
 		{
 			Console.WriteLine("Seu IMC é " + IMC + ", obesidade nível 2.");
 		}
-		if (IMC > 39.9)
+		if (IMC > 39.99)
 		{
 			Console.WriteLine("Seu IMC é " + IMC + ", obesidade mórbida.");
 		}
